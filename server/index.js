@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const {logger, isDev} = require('./lib');
 const app = express();
 const api = require('./api/');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 6000;
 
 function sendView (res, view) {
 	res.sendFile(view, { root: __dirname });
